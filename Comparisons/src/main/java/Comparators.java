@@ -15,6 +15,7 @@ public class Comparators {
      */
     public boolean isEqual(int a, int b){
         return true;
+        else return false;
     }
 
     /**
