@@ -5,8 +5,6 @@
  * Potentially, this class could also override some the behavior of Exception.
  */
 public class CustomException extends Exception{
-
-    public String CustomException() {
-        return null;
-    }
+    //CustomException ce = new CustomException();
 }
+
