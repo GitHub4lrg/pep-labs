@@ -8,9 +8,13 @@ public class CustomExceptionThrower {
      *
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
-    public void throwCustomException() throws CustomException{
-        CustomException ce = new CustomException();
-        String str = ce.CustomException();
+    public void throwCustomException(){
+        try{
+            CustomException ce = new CustomException();
+            String str = ce.CustomException();
+        }catch (Exception e) {
+            e.getStackTrace();
+    } 
+    }
+}
 
-}
-}
