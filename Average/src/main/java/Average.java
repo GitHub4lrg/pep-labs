@@ -15,15 +15,16 @@ public class Average {
      * answers to her question: https://stackoverflow.com/questions/13252903/i-need-to-convert-an-int-variable-to-double
      *
      * @param nums an array to be manipulated.
+     * @return 
      * @return the average of all the values of nums.
      */
     public double getAvg(int[] nums){
-        // double avg = 0.0;
-        // int length = nums.length;
         int sum = 0;
-        for (i = 0; i < nums.length; i++);
+        double avg = 0.0;
+        for (int i = 0; i < nums.length; i++){
             sum = sum + nums[i];
-            double avg = sum/nums.length;
+            avg = (double)sum/nums.length;
+        }
         return avg;
-    }
+    }   
 }
