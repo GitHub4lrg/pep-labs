@@ -33,8 +33,8 @@
     checkoutLocation: pep-gitpod-workspace
     upstreamRemoteURI: https://github.com/revature-curriculum/pep-gitpod-workspace.git
   :gitpod_workspace:
-    :workspace_id: github4lrg-pepgitpodwor-oqmrauqr72g
-    :workspace_url: https://github4lrg-pepgitpodwor-oqmrauqr72g.ws-us81.gitpod.io
+    :workspace_id: github4lrg-pepgitpodwor-uqfo21y6hkm
+    :workspace_url: https://github4lrg-pepgitpodwor-uqfo21y6hkm.ws-us82.gitpod.io
     :repo_root: "/workspace/pep-gitpod-workspace"
     :git_user_email: lrgutube09@gmail.com
     :git_user_name: Luis R Guerrero
