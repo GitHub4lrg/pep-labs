@@ -1,3 +1,4 @@
+import java.util.stream.IntStream;
 
 //
 
@@ -11,6 +12,6 @@ public class IndexOf {
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
     public int getIndex(int[] arr, int n){
-        return -1;
+        return IntStream.range(0, arr.length).filter(i -> arr[i] == n).findFirst().orElse(-1);
     }
 }
