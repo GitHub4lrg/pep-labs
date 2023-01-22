@@ -33,9 +33,14 @@ public class FlightDAO {
         List<Flight> flights = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "change me";
+            String sql = "select * from flights where flight_id = ? and departure_city = ? and arrival_city = ?;";
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            //write prepareStatement, setString and setInt
+            preparedStatement.setInt(0, flight_id);
+            preparedStatement.setString(1, departure_city);
+            preparedStatement.setInt(2, arrival_city);
+            
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
                 Flight flight = new Flight(rs.getInt("flight_id"), rs.getString("departure_city"),
