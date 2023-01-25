@@ -29,16 +29,19 @@ public class Pyramid {
     public String returnPyramid(int n){
         String row = "";
         String pyramid = "";
+        
+        //outer loop to handle number of rows
         for(int i = 0; i <= n; i++){
 
+            //inner loop to handle number of columns
+            // values changing acc. to outer loop
             for(int j = 0; j <= i; j++){
                 pyramid = pyramid + "*";
-                //System.out.print("*");
+                //System.out.print(pyramid);
             }
-            
             row = pyramid + "\n";
-            //System.out.println();
+            //System.out.println(row);
         }
-    return pyramid;
+        return pyramid;
     }
 }
