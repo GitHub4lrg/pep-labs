@@ -29,14 +29,15 @@ public class Pyramid {
     public String returnPyramid(int n){
         String row = "";
         String pyramid = "";
-        for(int i = 1; i <= n; i++){
+        for(int i = 0; i <= n; i++){
 
             for(int j = 0; j <= i; j++){
                 pyramid = pyramid + "*";
-                row = pyramid + "\n";
+                //System.out.print("*");
             }
             
-            //row = pyramid + "\n";
+            row = pyramid + "\n";
+            //System.out.println();
         }
     return pyramid;
     }
