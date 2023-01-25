@@ -33,9 +33,10 @@ public class Pyramid {
 
             for(int j = 0; j <= i; j++){
                 pyramid = pyramid + "*";
+                row = pyramid + "\n";
             }
             
-            row = pyramid + "\n";
+            //row = pyramid + "\n";
         }
     return pyramid;
     }
