@@ -27,7 +27,6 @@ public class Pyramid {
      * @return a string representation of the pyramid.
      */
     public String returnPyramid(int n){
-        String row = "";
         String pyramid = "";
 
         //outer loop to handle number of rows
@@ -35,11 +34,12 @@ public class Pyramid {
 
             //inner loop to handle number of columns
             // values changing acc. to outer loop
-            for(int j = 0; j <= i; j++){
+            for(int j = 0; j < i; j++){
                 pyramid = pyramid + "*";
                 //System.out.print(pyramid);
             }
-            row = pyramid + "\n";
+            pyramid = pyramid + "\n";
+            
             //System.out.println(row);
         }
         return pyramid;
