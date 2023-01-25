@@ -29,7 +29,7 @@ public class Pyramid {
     public String returnPyramid(int n){
         String row = "";
         String pyramid = "";
-        
+
         //outer loop to handle number of rows
         for(int i = 0; i <= n; i++){
 
