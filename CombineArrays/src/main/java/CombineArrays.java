@@ -15,7 +15,7 @@ public class CombineArrays {
         //System.arraycopy(arr1, 0, c1, 0, a);   //solution with predefined method arraycopy.
         //System.arraycopy(arr2, 0, c1, a, b);
         //return c1;
-        for(int i = 0; i < arr1.length; i++){
+        for(int i = 0; i < arr1.length; i++){  
             c1[i] = arr1[i];
         }
         for(int i = 0; i < arr2.length; i++){    //solution w/o using predefined method.
