@@ -97,8 +97,6 @@ public class OuterJoinActivity {
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
 
-
-
         Set<ExampleEntity> results = new HashSet<>();
         try {
             Connection connection = ConnectionUtil.getConnection();
