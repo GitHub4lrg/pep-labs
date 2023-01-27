@@ -12,6 +12,13 @@ public class IndexOf {
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
     public int getIndex(int[] arr, int n){
-        return IntStream.range(0, arr.length).filter(i -> arr[i] == n).findFirst().orElse(-1);
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == n){
+                return i;
+            }
+        }return -1;
+
+        //or we can use this solution instead:
+        //return IntStream.range(0, arr.length).filter(i -> arr[i] == n).findFirst().orElse(-1);
     }
 }
