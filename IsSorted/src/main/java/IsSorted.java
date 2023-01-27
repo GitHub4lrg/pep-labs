@@ -1,3 +1,4 @@
+
 public class IsSorted {
     /**
      * Return true if arr is sorted, smallest to largest, false otherwise.
