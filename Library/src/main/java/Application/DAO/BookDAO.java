@@ -116,7 +116,7 @@ public class BookDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
-            //preparedStatement.setInt(0, book.getCopies_available());   //is it possible implement it here???
+            //preparedStatement.setInt(1, book.getCopies_available());   //is it possible implement it here???
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
                 Book book = new Book(rs.getInt("isbn"),
