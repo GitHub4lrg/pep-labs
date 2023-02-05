@@ -61,6 +61,8 @@ public class SampleClass {
     public boolean equals(Object b) {
     if(this == b) return true;
     if (b == null || getClass() != b.getClass()) return false;
+    //SampleClass a = (SampleClass) b;
+    
     return false;
     }
     //    implement a custom .toString(){} method here.
