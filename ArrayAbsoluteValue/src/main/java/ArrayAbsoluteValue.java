@@ -10,7 +10,8 @@ public class ArrayAbsoluteValue {
      */
     public int[] getArrayAbs(int[] nums){
         for(int i = 0; i < nums.length; i++){
-            Math.abs(nums[i]);
+            nums[i] = Math.abs(nums[i]);
+             
         }
         return nums;
     }
