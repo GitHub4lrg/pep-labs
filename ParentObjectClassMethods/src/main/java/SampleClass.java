@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 /**
  * The test cases for this class use methods called .equals which aren't written anywhere in this class. How?
@@ -60,13 +61,10 @@ public class SampleClass {
     @Override
     public boolean equals(Object b) {
     if(this == b) return true;
-    if(b == null) return false;
-    if(getClass() != b.getClass()) return false;
-    //if (b == null || getClass() != b.getClass()) return false;
-    SampleClass a = (SampleClass) b;
-    return Objects.equals()
+    if (b == null || getClass() != b.getClass()) return false;
+    SampleClass sampleclass = (SampleClass) b;
+    return Objects.equals(a, sampleclass.a) && Objects.equals(b, sampleclass.b);
     
-    return false;
     }
     //    implement a custom .toString(){} method here.
     @Override
