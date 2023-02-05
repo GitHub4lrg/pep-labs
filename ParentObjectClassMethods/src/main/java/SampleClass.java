@@ -60,8 +60,11 @@ public class SampleClass {
     @Override
     public boolean equals(Object b) {
     if(this == b) return true;
-    if (b == null || getClass() != b.getClass()) return false;
-    //SampleClass a = (SampleClass) b;
+    if(b == null) return false;
+    if(getClass() != b.getClass()) return false;
+    //if (b == null || getClass() != b.getClass()) return false;
+    SampleClass a = (SampleClass) b;
+    return Objects.equals()
     
     return false;
     }
