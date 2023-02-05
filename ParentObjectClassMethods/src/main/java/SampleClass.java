@@ -59,11 +59,18 @@ public class SampleClass {
 
     //    implement a custom .equals(SampleClass other){} method here.
     @Override
-    public boolean equals(Object b) {
-    if(this == b) return true;
-    if (b == null || getClass() != b.getClass()) return false;
-    SampleClass sampleclass = (SampleClass) b;
-    return Objects.equals(a, sampleclass.a) && Objects.equals(b, sampleclass.b);
+    public boolean equals(Object obj) {
+        if(this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        SampleClass other = (SampleClass) obj;
+        if(a != other.a)return false;
+        if(b != other.b) return false;
+        return true;
+
+        //if(this.a == obj.a && this.b == obj.b) {
+        //    return true;
+        //}
+        //return false;
     }
     
     //    implement a custom .toString(){} method here.

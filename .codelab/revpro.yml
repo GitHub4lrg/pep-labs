@@ -40,12 +40,12 @@
     :git_user_name: Luis R Guerrero
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 0
+  :count_labs_passed: 1
   :count_tests_total: 361
-  :count_tests_passed: 6
+  :count_tests_passed: 9
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 6
+  :count_tests_passed: 9
   Start:
     :Week: 1
     :Order: 1
@@ -911,13 +911,13 @@
     :Order: 1
     :Type: lab
     :count_tests: 9
-    :count_tests_passed: 6
+    :count_tests_passed: 9
     :tests:
-      implementEqualsMethodTest1: 0
-      implementEqualsMethodTest2: 0
+      implementEqualsMethodTest1: 1
+      implementEqualsMethodTest2: 1
       implementEqualsMethodTest3: 1
       implementEqualsMethodTest4: 1
-      implementEqualsMethodTest5: 0
+      implementEqualsMethodTest5: 1
       toStringTest1: 1
       toStringTest2: 1
       toStringTest3: 1
