@@ -64,8 +64,8 @@ public class SampleClass {
     if (b == null || getClass() != b.getClass()) return false;
     SampleClass sampleclass = (SampleClass) b;
     return Objects.equals(a, sampleclass.a) && Objects.equals(b, sampleclass.b);
-    
     }
+    
     //    implement a custom .toString(){} method here.
     @Override
     public String toString(){

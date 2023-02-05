@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 7
+  :count_tests_passed: 6
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 7
+  :count_tests_passed: 6
   Start:
     :Week: 1
     :Order: 1
@@ -911,9 +911,9 @@
     :Order: 1
     :Type: lab
     :count_tests: 9
-    :count_tests_passed: 7
+    :count_tests_passed: 6
     :tests:
-      implementEqualsMethodTest1: 1
+      implementEqualsMethodTest1: 0
       implementEqualsMethodTest2: 0
       implementEqualsMethodTest3: 1
       implementEqualsMethodTest4: 1
