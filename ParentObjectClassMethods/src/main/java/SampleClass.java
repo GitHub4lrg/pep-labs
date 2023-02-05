@@ -1,3 +1,4 @@
+
 /**
  * The test cases for this class use methods called .equals which aren't written anywhere in this class. How?
  * All objects have a method called .equals and a method called toString - they are inherited from the Object class,
@@ -56,9 +57,16 @@ public class SampleClass {
     public boolean b;
 
     //    implement a custom .equals(SampleClass other){} method here.
-
-
+    @Override
+    public boolean equals(Object b) {
+    if(this == b) return true;
+    if (b == null || getClass() != b.getClass()) return false;
+    return false;
+    }
     //    implement a custom .toString(){} method here.
-
+    @Override
+    public String toString(){
+        return "SampleClass{"+ a + b +'}';
+    }
     
 }
