@@ -10,6 +10,11 @@ public class Isogram {
      * You could even solve it with an array of 26 booleans, and convert characters to an index of that array.
      * It's also possible to solve this with nested for loops.... but it's not as easy or efficient.
      *
+     * Sort the string
+     * Traverse the string and check for every character
+     * If the current character is equal to the character on the previous index then return false
+     * Return true
+     * 
      * @param str a String.
      * @return true if str is an isogram, false otherwise.
      */
