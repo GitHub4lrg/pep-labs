@@ -12,9 +12,16 @@ public class Fibonacci {
      * numbers before it, or you could look up a recursive solution to experiment with recursion for the first time.
      *
      * @param n an iteration of the fibonacci sequence.
-     * @return the nth number of fibonacci sequence.
      */
     public int fib(int n){
-        return 0;
+        fibonacci(n);
+        return (int) fibonacci(n);
+    }
+    //each recursive algorithm need a base case(to prevent stack overflow error)
+    private static long fibonacci(int n) {
+        if(n <= 1){
+            return n;
+        }
+        return (fibonacci(n-1) + fibonacci(n-2));
     }
 }
