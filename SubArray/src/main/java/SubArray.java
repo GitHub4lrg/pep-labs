@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class SubArray {
     /**
@@ -13,6 +15,11 @@ public class SubArray {
      * @return a sub-array of nums containing the values between start and end.
      */
     public int[] sub(int[] nums, int start, int end){
-        return null;
+        //you can use this option
+        //int[] subArray = Arrays.copyOfRange(nums, start, end);
+        
+        //Or you can use this other option
+        int[] subArray = IntStream.range(start, end).map(i -> nums[i]).toArray();
+        return subArray;
     }
 }
