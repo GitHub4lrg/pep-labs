@@ -15,10 +15,10 @@ public class Fibonacci {
      */
     public int fib(int n){
         fibonacci(n);
-        return (int) fibonacci(n);
+        return fibonacci(n);
     }
     //each recursive algorithm need a base case(to prevent stack overflow error)
-    private static long fibonacci(int n) {
+    private static int fibonacci(int n) {
         if(n <= 1){
             return n;
         }
