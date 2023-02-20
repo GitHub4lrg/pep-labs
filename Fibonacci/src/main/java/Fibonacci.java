@@ -13,15 +13,25 @@ public class Fibonacci {
      *
      * @param n an iteration of the fibonacci sequence.
      */
+    private static long[] fibonacciCache;   //to use for large numbers where iteration can take very long due to recalculation(memoization)
     public int fib(int n){
+        fibonacciCache = new long[n +1];
         fibonacci(n);
-        return fibonacci(n);
+        return (int) fibonacci(n);
     }
+    //create a fibonacci method
     //each recursive algorithm need a base case(to prevent stack overflow error)
-    private static int fibonacci(int n) {
+    private static long fibonacci(int n) {
         if(n <= 1){
             return n;
         }
-        return (fibonacci(n-1) + fibonacci(n-2));
+
+        if (fibonacciCache[n] != 0){
+            return fibonacciCache[n];
+        }
+        long nthFibonacciNumber = (fibonacci(n-1) + fibonacci(n-2));
+        fibonacciCache[n] = nthFibonacciNumber;
+        return nthFibonacciNumber;
+        //return (fibonacci(n-1) + fibonacci(n-2));
     }
 }
