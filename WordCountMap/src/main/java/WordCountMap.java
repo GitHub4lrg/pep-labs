@@ -1,6 +1,9 @@
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 public class WordCountMap {
     /**
      * Receive a string of multiple words.
@@ -16,7 +19,10 @@ public class WordCountMap {
      */
     public Map<String, Integer> returnWordMap(String words){
         Map<String, Integer> wordCount = new HashMap<String, Integer>();
-        
-        return null;
+        String[] ignored = words.split(" ");
+        wordCount = Arrays.stream(ignored)
+                        .filter(s-> !s.isEmpty())
+                        .collect(Collectors.groupingBy(Function.identy(), Collectors.counting()));
+        return wordCount;
     }
 }
