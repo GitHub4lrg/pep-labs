@@ -10,10 +10,11 @@ public class MostCommonCharacter {
      */
     final int ASCII_SIZE = 256;
     public char recurringChar(String str) {
-/*    int count[] = new int[ASCII_SIZE];
-        int len =str.length();
+/*      int count[] = new int[ASCII_SIZE];
+        int len = str.length();
         for(int i = 0; i < len; i++)
             count[str.charAt(i)]++;
+
             int max = -1;
             char result = ' ';
         for(int i = 0; i < len; i++){
@@ -31,18 +32,16 @@ public class MostCommonCharacter {
             result = str.charAt(i);
             if(map.containsKey(result) == true){
                 map.replace(result, map.get(result) + 1);
-            }
-            else{
+            }else{
                 map.put(result, 1);
             }
         }
-        
-        result = str.charAt(0);
+        //result = str.charAt(0);
         for(int i = 0; i < str.length(); i++){
             if(map.get(str.charAt(i)) > map.get(result)){
                 result = str.charAt(i);
             }
-        }
+        }  
         return result;
     }
 }
